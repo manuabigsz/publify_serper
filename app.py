@@ -27,4 +27,4 @@ def search_news():
     return jsonify(json.loads(data.decode("utf-8")))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8000)
